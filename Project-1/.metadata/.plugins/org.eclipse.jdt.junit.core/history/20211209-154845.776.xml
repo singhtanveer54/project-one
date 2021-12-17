@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="E2E-testing" tests="5" started="5" failures="0" errors="5" ignored="0">
+  <testsuite name="Login" time="55.51" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]">
+    <testcase name="Invalid password, valid username " classname="negative test" time="8.619" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:5]">
+      <error>io.cucumber.java.PendingException: TODO: implement me&#13;
+	at com.revature.gluecode.LoginTest.i_type_in_a_username_of(LoginTest.java:31)&#13;
+	at ✽.I type in a username of "bach_tran"(classpath:com/revature/feature/login.feature:7)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="Invalid password, invalid username " classname="negative test" time="5.299" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:12]">
+      <error>io.cucumber.java.PendingException: TODO: implement me&#13;
+	at com.revature.gluecode.LoginTest.i_type_in_a_username_of(LoginTest.java:31)&#13;
+	at ✽.I type in a username of "lkdsfjlksdjf"(classpath:com/revature/feature/login.feature:14)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="Valid password, invalid username " classname="negative test" time="6.472" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:19]">
+      <error>io.cucumber.java.PendingException: TODO: implement me&#13;
+	at com.revature.gluecode.LoginTest.i_type_in_a_username_of(LoginTest.java:31)&#13;
+	at ✽.I type in a username of "adsfsldjfkljlkjlkjkljlk"(classpath:com/revature/feature/login.feature:21)&#13;
+&#13;
+</error>
+    </testcase>
+    <testsuite name="Successful employee login" time="19.979" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:30]">
+      <testsuite name="Examples" time="19.979" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:30]/[examples:37]">
+        <testcase name="Example #1" classname="Example #1" time="19.979" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:30]/[examples:37]/[example:39]">
+          <error>io.cucumber.java.PendingException: TODO: implement me&#13;
+	at com.revature.gluecode.LoginTest.i_type_in_a_username_of(LoginTest.java:31)&#13;
+	at ✽.I type in a username of "singhyudhveer45"(classpath:com/revature/feature/login.feature:32)&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Successful manager login" time="15.137" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:42]">
+      <testsuite name="Examples" time="15.137" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:42]/[examples:49]">
+        <testcase name="Example #1" classname="Example #1" time="15.137" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:42]/[examples:49]/[example:51]">
+          <error>io.cucumber.java.PendingException: TODO: implement me&#13;
+	at com.revature.gluecode.LoginTest.i_type_in_a_username_of(LoginTest.java:31)&#13;
+	at ✽.I type in a username of "ranatanveer45"(classpath:com/revature/feature/login.feature:44)&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

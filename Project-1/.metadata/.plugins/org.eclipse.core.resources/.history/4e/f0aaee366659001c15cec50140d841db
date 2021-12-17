@@ -1,0 +1,9 @@
+Feature: Logout
+
+
+		
+		
+Scenario: Successful Logout (Positive Test)
+	Given I am at the manager page
+	When I click the logout button
+	Then I should be redirected to homepage

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="E2E-testing" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="Login" time="30.736" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]">
+    <testcase name="Invalid password, valid username " classname="negative test" time="5.748" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:5]"/>
+    <testcase name="Invalid password, invalid username " classname="negative test" time="6.863" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:12]"/>
+    <testcase name="Valid password, invalid username " classname="negative test" time="5.847" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:19]"/>
+    <testsuite name="Successful employee login" time="6.09" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:30]">
+      <testsuite name="Examples" time="6.09" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:30]/[examples:37]">
+        <testcase name="Example #1" classname="Example #1" time="6.09" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:30]/[examples:37]/[example:39]"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Successful manager login" time="6.187" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:42]">
+      <testsuite name="Examples" time="6.187" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:42]/[examples:49]">
+        <testcase name="Example #1" classname="Example #1" time="6.187" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:42]/[examples:49]/[example:51]"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

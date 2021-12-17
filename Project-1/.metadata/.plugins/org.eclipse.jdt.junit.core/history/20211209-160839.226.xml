@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="E2E-testing" tests="5" started="5" failures="0" errors="5" ignored="0">
+  <testsuite name="Login" time="0.214" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]">
+    <testcase name="Invalid password, valid username " classname="negative test" time="0.159" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:5]">
+      <error>java.lang.IllegalStateException: The driver executable must exist: c:\webdrivers\chromedriver.exe&#13;
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)&#13;
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:144)&#13;
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:139)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)&#13;
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:434)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)&#13;
+	at com.revature.gluecode.LoginTest.i_am_at_the_login_page(LoginTest.java:26)&#13;
+	at ✽.I am at the login page(classpath:com/revature/feature/login.feature:6)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="Invalid password, invalid username " classname="negative test" time="0.013" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:12]">
+      <error>java.lang.IllegalStateException: The driver executable must exist: c:\webdrivers\chromedriver.exe&#13;
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)&#13;
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:144)&#13;
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:139)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)&#13;
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:434)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)&#13;
+	at com.revature.gluecode.LoginTest.i_am_at_the_login_page(LoginTest.java:26)&#13;
+	at ✽.I am at the login page(classpath:com/revature/feature/login.feature:13)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="Valid password, invalid username " classname="negative test" time="0.012" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:19]">
+      <error>java.lang.IllegalStateException: The driver executable must exist: c:\webdrivers\chromedriver.exe&#13;
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)&#13;
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:144)&#13;
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:139)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)&#13;
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:434)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)&#13;
+	at com.revature.gluecode.LoginTest.i_am_at_the_login_page(LoginTest.java:26)&#13;
+	at ✽.I am at the login page(classpath:com/revature/feature/login.feature:20)&#13;
+&#13;
+</error>
+    </testcase>
+    <testsuite name="Successful employee login" time="0.013" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:30]">
+      <testsuite name="Examples" time="0.013" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:30]/[examples:37]">
+        <testcase name="Example #1" classname="Example #1" time="0.013" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:30]/[examples:37]/[example:39]">
+          <error>java.lang.IllegalStateException: The driver executable must exist: c:\webdrivers\chromedriver.exe&#13;
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)&#13;
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:144)&#13;
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:139)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)&#13;
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:434)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)&#13;
+	at com.revature.gluecode.LoginTest.i_am_at_the_login_page(LoginTest.java:26)&#13;
+	at ✽.I am at the login page(classpath:com/revature/feature/login.feature:31)&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Successful manager login" time="0.014" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:42]">
+      <testsuite name="Examples" time="0.014" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:42]/[examples:49]">
+        <testcase name="Example #1" classname="Example #1" time="0.014" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:42]/[examples:49]/[example:51]">
+          <error>java.lang.IllegalStateException: The driver executable must exist: c:\webdrivers\chromedriver.exe&#13;
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:315)&#13;
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:144)&#13;
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:139)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)&#13;
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:434)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:46)&#13;
+	at com.revature.gluecode.LoginTest.i_am_at_the_login_page(LoginTest.java:26)&#13;
+	at ✽.I am at the login page(classpath:com/revature/feature/login.feature:43)&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

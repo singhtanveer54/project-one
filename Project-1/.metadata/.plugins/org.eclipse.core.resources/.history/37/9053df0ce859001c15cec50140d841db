@@ -1,0 +1,14 @@
+Feature: Signup
+
+# " " double quotes are used as inline parameters for the actual gluecode methods. It will be passed in as arguments
+
+Scenario: valid username, valid password, empty first name, valid last name, valid email, valid role  (negative test)
+	Given I am at the signup page
+	When I type in a username of "tanveer45" 
+	And I type in a password of "grhrfr "
+	And I type in a first name of 
+	And I type in a last name of "Singh "
+	And I type in a email of "tanveer@list.com "
+	And I type in a role of "manager"
+	And I click the sign up button
+	Then I should see a message of "Username cannot be empty"

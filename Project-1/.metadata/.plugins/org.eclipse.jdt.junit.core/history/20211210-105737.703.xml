@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="E2E-testing" tests="5" started="5" failures="1" errors="0" ignored="0">
+  <testsuite name="Login" time="44.249" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]">
+    <testcase name="Invalid password, valid username " classname="negative test" time="13.003" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:5]"/>
+    <testcase name="Invalid password, invalid username " classname="negative test" time="5.548" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:12]"/>
+    <testcase name="Valid password, invalid username " classname="negative test" time="5.784" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:19]"/>
+    <testsuite name="Successful employee login" time="6.159" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:30]">
+      <testsuite name="Examples" time="6.159" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:30]/[examples:37]">
+        <testcase name="Example #1" classname="Example #1" time="6.159" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:30]/[examples:37]/[example:39]">
+          <failure>
+            <expected>Welcome to the Employee homepage</expected>
+            <actual>Welcome Yudhveer Singh</actual>
+            org.opentest4j.AssertionFailedError: expected: &lt;Welcome to the Employee homepage&gt; but was: &lt;Welcome Yudhveer Singh&gt;&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)&#13;
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)&#13;
+	at com.revature.gluecode.LoginTest.i_should_be_redirected_to_the_employee_homepage(LoginTest.java:62)&#13;
+	at ✽.I should be redirected to the employee homepage(classpath:com/revature/feature/login.feature:35)&#13;
+&#13;
+
+          </failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Successful manager login" time="13.753" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:42]">
+      <testsuite name="Examples" time="13.753" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:42]/[examples:49]">
+        <testcase name="Example #1" classname="Example #1" time="13.753" uniqueid="[engine:cucumber]/[feature:classpath%3Acom%2Frevature%2Ffeature%2Flogin.feature]/[scenario:42]/[examples:49]/[example:51]"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

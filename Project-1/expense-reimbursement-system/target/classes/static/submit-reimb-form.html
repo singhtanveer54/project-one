@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Expense Reimbursement System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<link rel = "stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+  <div id ="reimb-image-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Welcome to the Employee homepage</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" id="logout">Log Out</a>
+    <a href="employee-homepage.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Expense Reimbursement</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <div id="fnLn" class="content is-large"></div>
+    <span id="ln"></span>
+  </div>
+    <div id ="reimb-image-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+    <div id="reimbursement-submit-form">
+        <h2 id="fnLn"></h2>
+
+        <div class="field">
+            <!-- <label for="first-name">First Name:</label>
+            <input type="text" id="fn" />
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="ln" /> -->
+            <label for="amount" class="label">Amount:</label>
+            <div class="control">
+                <input type="number" id="amount" class="input is-primary" />
+            </div>
+            </div>
+            <label for="reimb-type" class="label">Select reimbursement type:</label>
+            <select name="reimb" id="reimbType" class="label">
+                <option value="">Select</option>
+                <option value="lodging">Lodging</option>
+                <option value="travel">Travel</option>
+                <option value="food">Food</option>
+                <option value=" other">Other</option>
+            </select>
+            <label for="desc" class="label">Description:</label>
+            <textarea id="description" class="input is-primary"></textarea>
+        <!-- </div>
+        
+        <div> -->
+            <label for="reimbFile">Reimbursement Upload (JPEG, PNG, or GIF)</label>
+            <div id="file-spacing">
+                <input type="file" id="reimbursement-file" />
+            </div>
+            
+        </div>
+        
+        <div class="field is-grouped is-grouped-left">
+            <button id="submit-reimbursement-btn" class="button is-primary">Submit reimbursement</button>
+        </div>
+    </div>
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+        }
+         
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+        }
+        
+        // Modal Image Gallery
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+          var captionText = document.getElementById("caption");
+          captionText.innerHTML = element.alt;
+        }
+        </script>
+
+        <script src="submit-form.js"></script>
+</body>
+</html>
