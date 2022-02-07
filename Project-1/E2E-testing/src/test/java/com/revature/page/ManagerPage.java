@@ -17,9 +17,27 @@ public class ManagerPage {
 	
 	@FindBy(xpath="//*[text()='Welcome to the Manager homepage']")
 	private WebElement welcomeHeading;
+
+	@FindBy(xpath="//input[@id='userId']")
+	private WebElement userIdInput;
+
+	@FindBy(xpath="//input[@id='status']")
+	private WebElement statusInput;
+
+	@FindBy(id="submitBTN")
+	private WebElement submitButton;
 	
 	@FindBy(xpath="//*[text()='Log Out']")
 	private WebElement logoutButton;
+
+	@FindBy(xpath="//p[contains(text(),'Reimbursement already been approved')]")
+	private WebElement displayMessage;
+
+	@FindBy(xpath="//a[@id='aR']")
+	private WebElement allReimbursementButton;
+
+	@FindBy(xpath="//b[contains(text(),'All Reimbursements')]")
+	private WebElement displayAllMessage;
 	
 	public ManagerPage(WebDriver driver) {
 		this.driver = driver;	
@@ -31,6 +49,30 @@ public class ManagerPage {
 	
 	public WebElement getWelcomeHeading() {
 		return this.wdw.until(ExpectedConditions.visibilityOf(welcomeHeading));
+	}
+
+	public WebElement getUserId(){
+		return this.wdw.until(ExpectedConditions.visibilityOf(userIdInput));
+	}
+
+	public WebElement getStatus(){
+		return this.statusInput;
+	}
+
+	public WebElement getSubmit(){
+		return this.submitButton;
+	}
+
+	public WebElement getErrorMessage() {
+		return this.wdw.until(ExpectedConditions.visibilityOf(this.displayMessage));
+	}
+
+	public WebElement getAllReimbursement(){
+		return this.allReimbursementButton;
+	}
+
+	public WebElement getDisplayAllReimbursementMessage(){
+		return this.displayAllMessage;
 	}
 	
 	public WebElement getLogoutButton() {

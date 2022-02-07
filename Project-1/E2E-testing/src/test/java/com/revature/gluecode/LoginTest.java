@@ -20,13 +20,15 @@ public class LoginTest {
 	private ManagerPage managerPage;
 	
 	@Given("I am at the login page")
-	public void i_am_at_the_login_page() {
+	public void i_am_at_the_login_page() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\Chrome\\chromedriver.exe");
 		
 		this.driver = new ChromeDriver();
 		
 		this.driver.get("http://localhost:5500");
+		driver.manage().window().maximize();
 		this.loginPage = new LoginPage(driver);
+		Thread.sleep(4000);
 	}
 	
 	@When("I type in a username of {string}")
@@ -60,7 +62,9 @@ public class LoginTest {
 		String expectedWelcomeHeadingText = "Welcome Yudhveer Singh";
 		
 		Assertions.assertEquals(expectedWelcomeHeadingText, this.employeePage.getWelcomeHeading().getText());
-		
+
+		System.out.println(this.employeePage.getWelcomeHeading().getText());
+		Thread.sleep(3000);
 		this.driver.quit();
 	}
 	
@@ -71,6 +75,9 @@ public class LoginTest {
 		String expectedWelcomeHeadingText = "Welcome to the Manager homepage";
 		
 		Assertions.assertEquals(expectedWelcomeHeadingText, this.managerPage.getWelcomeHeading().getText());
+		System.out.println(this.managerPage.getWelcomeHeading().getText());
+
+		this.driver.quit();
 	}
 	
 }
