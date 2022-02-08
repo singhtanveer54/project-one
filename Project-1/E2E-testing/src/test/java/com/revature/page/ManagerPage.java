@@ -33,11 +33,20 @@ public class ManagerPage {
 	@FindBy(xpath="//p[contains(text(),'Reimbursement already been approved')]")
 	private WebElement displayMessage;
 
-	@FindBy(xpath="//a[@id='aR']")
+	@FindBy(xpath="/html[1]/body[1]/nav[1]/div[2]/a[2]")
 	private WebElement allReimbursementButton;
 
-	@FindBy(xpath="//b[contains(text(),'All Reimbursements')]")
+	@FindBy(id = "fnLn")
 	private WebElement displayAllMessage;
+
+	@FindBy(xpath = "//h1[contains(text(),'Expense Reimbursement System')]")
+	private WebElement loginHeading;
+
+	@FindBy(xpath = "//a[contains(text(),'Pending Reimbursement')]")
+	private WebElement pendingButton;
+
+	@FindBy(xpath = "//b[contains(text(),'Pending Reimbursements')]")
+	private WebElement pendingPage;
 	
 	public ManagerPage(WebDriver driver) {
 		this.driver = driver;	
@@ -72,12 +81,23 @@ public class ManagerPage {
 	}
 
 	public WebElement getDisplayAllReimbursementMessage(){
-		return this.displayAllMessage;
+		return this.wdw.until(ExpectedConditions.visibilityOf(displayAllMessage));
 	}
 	
 	public WebElement getLogoutButton() {
 		return this.wdw.until(ExpectedConditions.visibilityOf(logoutButton));
 		
+	}
+
+	public WebElement getLoginHeading(){
+		return this.wdw.until(ExpectedConditions.visibilityOf(loginHeading));
+	}
+
+	public WebElement getPendingButton(){
+		return this.pendingButton;
+	}
+	public WebElement getPendingPage(){
+		return this.wdw.until(ExpectedConditions.visibilityOf(pendingPage));
 	}
 
 }
