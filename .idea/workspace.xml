@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="de16db1e-c57b-472b-ad9a-12108cc96840" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project-1/expense-reimbursement-system/src/test/java/com/revature/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project-1/expense-reimbursement-system/src/test/java/com/revature/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project-1/expense-reimbursement-system/target/classes/static/main-manager-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project-1/expense-reimbursement-system/target/classes/static/main-manager-page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
